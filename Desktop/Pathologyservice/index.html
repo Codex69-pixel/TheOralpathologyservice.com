@@ -46,13 +46,13 @@
   <meta name="twitter:image" content="https://theoralpathologyservice.com/wp-content/uploads/2026/03/Profile-Photo-1-683x1024.jpg" />
 
   <!-- ===== FAVICON ===== -->
-  <link rel="icon" type="image/jpeg" href="https://theoralpathologyservice.com/wp-content/uploads/2026/01/cropped-ops-logo.2ai-02-scaled-1-270x270.jpg" />
-  <link rel="apple-touch-icon" href="https://theoralpathologyservice.com/wp-content/uploads/2026/01/cropped-ops-logo.2ai-02-scaled-1-270x270.jpg" />
+  <link rel="icon" type="image/png" href="OPS files/Logo files/png without bg/ops logo.2ai-02.png" />
+  <link rel="apple-touch-icon" href="OPS files/Logo files/png without bg/ops logo.2ai-02.png" />
 
   <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- ===== STRUCTURED DATA / SCHEMA MARKUP (AI & SEO) ===== -->
   <script type="application/ld+json">
@@ -207,6 +207,89 @@
   </script>
 
   <style>
+    /* ===== Brand colour test palette ===== */
+     :root {
+      --brand-primary: #53A9BD;
+      --brand-secondary: #1D1D3C;
+      --white: #ffffff;
+      --navy: var(--brand-secondary);
+      --navy-deep: #18182e;
+      --teal: var(--brand-primary);
+      --teal-light: #6fc6e0;
+      --teal-pale: #e6f4f4;
+      --gold: #c9a84c;
+      --gold-light: #e8c76d;
+      --off-white: #f7f9fb;
+      --text: var(--brand-secondary);
+      --text-light: #4a5568;
+      --border: #d1dce8;
+      --shadow: 0 4px 24px rgba(29,29,60,0.10);
+      --shadow-lg: 0 8px 48px rgba(29,29,60,0.16);
+      --radius: 10px;
+      --radius-lg: 18px;
+      --font-display: 'Outfit', Arial, sans-serif;
+      --font-body: 'Lexend Deca', Arial, sans-serif;
+      --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      line-height: 1.25;
+      color: var(--navy);
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 14px;
+      font-family: var(--font-display);
+    }
+    .btn-primary {
+      background: var(--teal);
+      color: var(--white);
+      border-color: var(--teal);
+      font-family: var(--font-display);
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy-deep);
+      border-color: var(--gold);
+      font-family: var(--font-display);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.7);
+      font-family: var(--font-display);
+    }
+    .about-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      color: var(--navy);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+  .about-title-role { font-size: 0.95rem; color: var(--teal); font-weight: 600; margin-bottom: 24px; font-family: var(--font-display); }
+    .nav-links a {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: var(--transition);
+      font-family: var(--font-display);
+    }
     /* ===== RESET & BASE ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
@@ -241,7 +324,7 @@
       overflow-x: hidden;
     }
 
-    img { max-width: 100%; height: auto; display: block; }
+    img { max-width: 100%; height: auto; display: block; object-fit: contain; }
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
 
@@ -357,6 +440,8 @@
     .nav-logo img {
       height: 44px;
       width: auto;
+      object-fit: contain;
+      aspect-ratio: 140/44;
     }
     .nav-links {
       display: flex;
@@ -1068,7 +1153,13 @@
       padding-bottom: 56px;
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-    .footer-brand img { height: 42px; margin-bottom: 18px; }
+    .footer-brand img {
+      height: 42px;
+      width: auto;
+      margin-bottom: 18px;
+      object-fit: contain;
+      aspect-ratio: 140/42;
+    }
     .footer-brand p { font-size: 0.875rem; line-height: 1.75; max-width: 280px; margin-bottom: 24px; }
     .footer-heading {
       font-size: 0.75rem;
@@ -1224,9 +1315,8 @@
   <header id="header" role="banner">
     <nav class="container nav-inner" aria-label="Main navigation">
       <a href="#home" class="nav-logo" aria-label="The Oral Pathology Service – Home">
-        <img src="https://theoralpathologyservice.com/wp-content/uploads/2025/12/logo-ops.png"
-             alt="The Oral Pathology Service Logo"
-             width="140" height="44" />
+           <img src="OPS files/Logo files/png without bg/ops logo.2ai-02.png"
+             alt="The Oral Pathology Service Logo" />
       </a>
 
       <ul class="nav-links" role="list">
@@ -1772,7 +1862,7 @@
             <div class="form-panel active" id="panel-submission">
               <div class="form-box">
                 <form id="submissionForm" novalidate>
-                  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE" />
+                  <input type="hidden" name="access_key" value="547e9476-f74d-4db8-9b4b-faf1642f3e85" />
                   <input type="hidden" name="subject" value="New Specimen Submission – The Oral Pathology Service" />
                   <input type="hidden" name="from_name" value="The Oral Pathology Service Website" />
                   <input type="hidden" name="form_type" value="Specimen Submission" />
@@ -1865,7 +1955,7 @@
             <div class="form-panel" id="panel-tracking">
               <div class="form-box">
                 <form id="trackingForm" novalidate>
-                  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE" />
+                  <input type="hidden" name="access_key" value="547e9476-f74d-4db8-9b4b-faf1642f3e85" />
                   <input type="hidden" name="subject" value="Case Tracking Enquiry – The Oral Pathology Service" />
                   <input type="hidden" name="from_name" value="The Oral Pathology Service Website" />
                   <input type="hidden" name="form_type" value="Case Tracking" />
@@ -1922,7 +2012,7 @@
             <div class="form-panel" id="panel-enquiry">
               <div class="form-box">
                 <form id="enquiryForm" novalidate>
-                  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE" />
+                  <input type="hidden" name="access_key" value="547e9476-f74d-4db8-9b4b-faf1642f3e85" />
                   <input type="hidden" name="subject" value="General Enquiry – The Oral Pathology Service" />
                   <input type="hidden" name="from_name" value="The Oral Pathology Service Website" />
                   <input type="hidden" name="form_type" value="General Enquiry" />
@@ -1995,9 +2085,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://theoralpathologyservice.com/wp-content/uploads/2025/12/logo-ops.png"
-               alt="The Oral Pathology Service"
-               loading="lazy" width="140" height="42" />
+          <img src="OPS files/Logo files/png without bg/ops logo.2ai-02.png"
+            alt="The Oral Pathology Service"
+            loading="lazy" />
           <p>Providing specialist oral and maxillofacial pathology diagnostic services to clinicians across Kenya and East Africa. Accurate. Timely. Accessible.</p>
           <a href="mailto:info@theoralpathologyservice.com" style="color:var(--teal-light); font-size:0.875rem;">info@theoralpathologyservice.com</a>
         </div>

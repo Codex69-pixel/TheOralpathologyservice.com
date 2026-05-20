@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ===== PRIMARY SEO META ===== -->
+  <title>The Oral Pathology Service | Specialist Oral & Maxillofacial Pathology in Kenya & East Africa</title>
+  <meta name="description" content="The Oral Pathology Service provides specialist oral and maxillofacial histopathology and cytopathology diagnostic services in Kenya and East Africa. Led by Dr. Muthoni Ndonga, FC Path (SA). Fast turnaround. Affordable. Accurate." />
+  <meta name="keywords" content="oral pathology Kenya, oral pathology Nairobi, maxillofacial pathology East Africa, oral biopsy diagnosis Kenya, histopathology oral cavity, cytopathology Nairobi, dental pathology specialist Kenya, oral cancer diagnosis Nairobi, jaw lesion biopsy Kenya, salivary gland pathology, odontogenic tumor diagnosis, oral mucosa biopsy, second opinion oral pathology, Dr Muthoni Ndonga, specialist pathologist Kenya" />
+  <meta name="author" content="The Oral Pathology Service" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://theoralpathologyservice.com/" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Oral Pathology Service | Specialist Diagnostic Pathology – Kenya & East Africa" />
+  <meta property="og:description" content="Specialist oral and maxillofacial pathology services in Kenya. Accurate histopathology & cytopathology reports. Fast turnaround." />
+  <meta property="og:image" content="OPS files/Profile Photo.JPG" />
+  <meta property="og:site_name" content="The Oral Pathology Service" />
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/png" href="OPS files/Logo files/png without bg/ops logo.2ai-02.png" />
+  
+  <!-- ===== FONTS ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --brand-primary: #53A9BD;
+      --brand-secondary: #1D1D3C;
+      --white: #ffffff;
+      --navy: #1D1D3C;
+      --navy-light: #2a2a4a;
+      --teal: #53A9BD;
+      --teal-light: #7bc2d4;
+      --teal-pale: #eef7f9;
+      --off-white: #f8fafc;
+      --text-dark: #1e293b;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --shadow: 0 4px 20px rgba(0,0,0,0.05);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Lexend Deca', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--brand-primary);
+      color: white;
+    }
+    .btn-primary:hover { background: #3f8ea0; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(83,169,189,0.3); }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--brand-primary);
+      color: var(--brand-primary);
+    }
+    .btn-outline:hover { background: var(--teal-pale); }
+    .btn-navy {
+      background: var(--brand-secondary);
+      color: white;
+    }
+    .btn-navy:hover { background: #2d2d52; transform: translateY(-2px); }
+
+    /* Headings */
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand-primary);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--brand-secondary);
+      margin-bottom: 20px;
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+      z-index: 1000;
+      transition: 0.2s;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+    .nav-logo img {
+      height: 50px;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+    .nav-links a {
+      font-family: var(--font-display);
+      font-weight: 500;
+      color: var(--brand-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--brand-primary); }
+    .nav-cta { display: flex; gap: 12px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+    .hamburger span { width: 24px; height: 2px; background: var(--brand-secondary); transition: 0.2s; }
+    .mobile-nav { display: none; position: fixed; top: 74px; left: 0; right: 0; background: white; padding: 24px; border-top: 1px solid var(--border); z-index: 999; }
+    .mobile-nav a { display: block; padding: 12px 0; color: var(--brand-secondary); text-decoration: none; font-weight: 500; }
+    .mobile-nav.open { display: block; }
+
+    /* Hero Slideshow */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 74px;
+    }
+    .hero-slides {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.8s ease-in-out;
+    }
+    .hero-slide.active { opacity: 1; }
+    .hero-slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg, rgba(29,29,60,0.75) 30%, rgba(29,29,60,0.4) 100%);
+    }
+    .hero-slide-1 { background-image: url('OPS files/Slideshow img.jpeg'); }
+    .hero-slide-2 { background-image: url('OPS files/WhatsApp Image 2026-05-16 at 13.35.16.jpeg'); }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 60px 0;
+    }
+    .hero-eyebrow {
+      color: var(--brand-primary);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero-title em { color: var(--brand-primary); font-style: normal; }
+    .hero-description {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      margin-bottom: 32px;
+      max-width: 550px;
+    }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    /* Mission Section (standalone) */
+    .mission-section {
+      background: var(--teal-pale);
+      padding: 70px 0;
+    }
+    .mission-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .mission-card h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--brand-secondary);
+      margin-bottom: 16px;
+    }
+    .mission-card p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Commitment Section (standalone) */
+    .commitment-section {
+      background: white;
+      padding: 80px 0;
+    }
+    .commitment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .commitment-item {
+      background: var(--off-white);
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      transition: 0.25s;
+    }
+    .commitment-item:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--brand-primary); }
+    .commitment-item h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--brand-secondary);
+      margin-bottom: 12px;
+    }
+    .commitment-item p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+
+    /* Services with Images */
+    .services-section {
+      background: var(--off-white);
+      padding: 80px 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 48px;
+    }
+    .service-card-img {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+    }
+    .service-card-img:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    .service-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #eef2f6;
+    }
+    .service-content { padding: 24px; }
+    .service-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--brand-secondary);
+      margin-bottom: 10px;
+    }
+    .service-content p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
+    .service-link {
+      color: var(--brand-primary);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+    }
+
+    /* Clients - one line style */
+    .clients-section {
+      background: white;
+      padding: 70px 0;
+      text-align: center;
+    }
+    .clients-inline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 40px;
+    }
+    .client-item {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: var(--brand-secondary);
+      letter-spacing: -0.2px;
+    }
+
+    /* Process - unchanged */
+    .process-section {
+      background: var(--off-white);
+      padding: 80px 0;
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 48px;
+    }
+    .process-step {
+      text-align: center;
+      background: white;
+      padding: 30px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .step-num {
+      width: 60px;
+      height: 60px;
+      background: var(--brand-primary);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .step-title { font-family: var(--font-display); font-weight: 700; color: var(--brand-secondary); margin-bottom: 8px; }
+    .step-desc { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* About - article style like initial site */
+    .about-section {
+      background: white;
+      padding: 80px 0;
+    }
+    .about-article {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-photo {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-badge {
+      margin-top: 16px;
+      background: var(--teal-pale);
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+    .about-name {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--brand-secondary);
+      margin-bottom: 6px;
+    }
+    .about-title-role {
+      color: var(--brand-primary);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .about-bio {
+      margin-bottom: 24px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .credential-list {
+      background: var(--off-white);
+      padding: 24px;
+      border-radius: 20px;
+      margin: 24px 0;
+    }
+    .credential {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .credential-icon { font-size: 1.2rem; }
+    .credential-text strong { color: var(--brand-secondary); display: block; }
+    .roles-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    .role-tag {
+      background: var(--teal-pale);
+      color: var(--brand-primary);
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* FAQ (unchanged) */
+    .faq-section {
+      background: var(--off-white);
+      padding: 80px 0;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+    .faq-q {
+      width: 100%;
+      padding: 20px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-weight: 600;
+      font-family: var(--font-body);
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      color: var(--brand-secondary);
+    }
+    .faq-a {
+      display: none;
+      padding: 0 20px 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-cta-box {
+      background: var(--brand-secondary);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      color: white;
+    }
+    .faq-cta-box h3 { font-family: var(--font-display); margin-bottom: 16px; }
+    .faq-link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.1);
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--brand-secondary);
+      color: rgba(255,255,255,0.7);
+      padding: 60px 0 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+    }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; display: block; margin-bottom: 10px; font-size: 0.85rem; }
+    .footer-bottom { text-align: center; padding-top: 40px; font-size: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; }
+
+    /* Modal Popup Forms */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-container {
+      background: white;
+      max-width: 550px;
+      width: 90%;
+      border-radius: 28px;
+      padding: 32px;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 0.85rem; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: var(--font-body);
+    }
+    .form-success-msg { display: none; background: #d1fae5; padding: 12px; border-radius: 12px; color: #065f46; margin-top: 16px; }
+    .form-error-msg { display: none; background: #fee2e2; padding: 12px; border-radius: 12px; color: #991b1b; margin-top: 16px; }
+
+    @media (max-width: 1000px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .services-grid, .commitment-grid, .process-steps { grid-template-columns: 1fr 1fr; }
+      .about-article { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 700px) {
+      .services-grid, .commitment-grid, .process-steps { grid-template-columns: 1fr; }
+      .clients-inline { flex-direction: column; gap: 20px; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo"><img src="OPS files/Logo files/png without bg/ops logo.2ai-02.png" alt="Logo"></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#commitment">Commitment</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">Specialist</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-outline" id="trackCaseBtn">Track Case</button>
+      <button class="btn btn-primary" id="submitSpecimenBtn">Submit Specimen</button>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a><a href="#mission">Mission</a><a href="#commitment">Commitment</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">Specialist</a><a href="#faq">FAQ</a>
+    <button class="btn btn-primary" style="margin-top:12px;" id="mobileSubmitBtn">Submit Specimen</button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide hero-slide-1 active"></div>
+      <div class="hero-slide hero-slide-2"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Accessible · Accurate · Clinically Integrated</div>
+        <h1 class="hero-title">Oral & <em>Maxillofacial</em><br>Pathology Services</h1>
+        <p class="hero-description">The Oral Pathology Service provides specialised diagnostic interpretation of oral and maxillofacial specimens — supporting clinicians across Kenya and East Africa with timely, accurate, and accessible pathology services.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" id="heroSubmitBtn">Submit a Specimen</button>
+          <button class="btn btn-outline" id="heroTrackBtn">Track a Case</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission standalone -->
+  <section id="mission" class="mission-section">
+    <div class="container">
+      <div class="mission-card">
+        <h2>Our Mission</h2>
+        <p>To strengthen oral and maxillofacial diagnostic capacity across Kenya and underserved regions by reducing diagnostic delays, supporting effective clinical decisions, and improving patient care outcomes through accessible, specialist pathology. Accurate diagnosis enables better clinical outcomes — for every patient, in every setting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitment standalone (no icons) -->
+  <section id="commitment" class="commitment-section">
+    <div class="container">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">Our Commitment to Diagnostic Excellence</h2>
+      <div class="commitment-grid">
+        <div class="commitment-item"><h3>Diagnostic Excellence</h3><p>Rigorous, evidence-based microscopic analysis by a Board-certified specialist.</p></div>
+        <div class="commitment-item"><h3>Clinical Collaboration</h3><p>We work alongside your clinical team for optimal clinicopathological correlation.</p></div>
+        <div class="commitment-item"><h3>Timely Access</h3><p>Standard 3–5 day turnaround with expedited options for urgent cases.</p></div>
+        <div class="commitment-item"><h3>Capacity Building</h3><p>Supporting diagnostic capacity in both well-resourced and underserved settings.</p></div>
+        <div class="commitment-item"><h3>Equitable Service</h3><p>Committed to reducing diagnostic disparities across East Africa.</p></div>
+        <div class="commitment-item"><h3>Evidence-Based</h3><p>All reports integrate current diagnostic guidelines and classifications.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services with images -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Specialist Oral Pathology Services</h2>
+      <div class="services-grid">
+        <div class="service-card-img"><img src="OPS files/Slideshow img.jpeg" alt="Histopathology" class="service-img"><div class="service-content"><h3>Histopathological Evaluation</h3><p>Microscopic evaluation of oral lesions, odontogenic tumors, and inflammatory conditions.</p><button class="service-link open-modal-btn" data-form="submission">Learn More →</button></div></div>
+        <div class="service-card-img"><img src="OPS files/WhatsApp Image 2026-05-16 at 13.35.16.jpeg" alt="Routine Reporting" class="service-img"><div class="service-content"><h3>Routine & Complex Reporting</h3><p>Structured diagnostic reports supporting direct clinical action.</p><button class="service-link open-modal-btn" data-form="submission">Learn More →</button></div></div>
+        <div class="service-card-img"><img src="OPS files/Profile Photo.JPG" alt="Ancillary Support" class="service-img"><div class="service-content"><h3>Ancillary Diagnostic Support</h3><p>IHC, molecular, microbiology collaborations for complex diagnoses.</p><button class="service-link open-modal-btn" data-form="submission">Learn More →</button></div></div>
+        <div class="service-card-img"><img src="OPS files/Copilot_20260512_144501.png" alt="Multidisciplinary" class="service-img"><div class="service-content"><h3>Multidisciplinary Approach</h3><p>Correlation with clinical history, imaging and photographs.</p><button class="service-link open-modal-btn" data-form="submission">Learn More →</button></div></div>
+        <div class="service-card-img"><img src="OPS files/Logo files/png without bg/ops logo.2ai-02.png" alt="Second Opinions" class="service-img"><div class="service-content"><h3>Second Opinions</h3><p>Independent expert review of challenging cases.</p><button class="service-link open-modal-btn" data-form="submission">Learn More →</button></div></div>
+        <div class="service-card-img"><img src="OPS files/Slideshow img.jpeg" alt="Case Tracking" class="service-img"><div class="service-content"><h3>Case Tracking & Enquiries</h3><p>Secure online system for updates and clinical enquiries.</p><button class="service-link open-modal-btn" data-form="tracking">Track Case →</button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients inline (no icons) -->
+  <section id="clients" class="clients-section">
+    <div class="container">
+      <div class="section-label">Who We Serve</div>
+      <h2 class="section-title">Designed for Every Clinical Setting</h2>
+      <div class="clients-inline">
+        <span class="client-item">Dental Practitioners & Specialists</span>
+        <span class="client-item">Oral & Maxillofacial Surgeons</span>
+        <span class="client-item">ENT Specialists</span>
+        <span class="client-item">Public & Private Facilities</span>
+        <span class="client-item">Academic & Research Institutions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process (unchanged) -->
+  <section id="process" class="process-section">
+    <div class="container"><div class="section-label">How It Works</div><h2 class="section-title">Our Simple 4-Step Process</h2>
+      <div class="process-steps"><div class="process-step"><div class="step-num">1</div><h3 class="step-title">Specimen Submission</h3><p class="step-desc">Submit biopsy with request form and clinical history.</p></div>
+      <div class="process-step"><div class="step-num">2</div><h3 class="step-title">Pathologic Evaluation</h3><p class="step-desc">Expert microscopic examination by oral pathologist.</p></div>
+      <div class="process-step"><div class="step-num">3</div><h3 class="step-title">Diagnostic Report</h3><p class="step-desc">Detailed report with diagnosis and recommendations.</p></div>
+      <div class="process-step"><div class="step-num">4</div><h3 class="step-title">Clinical Support</h3><p class="step-desc">Direct consultations and follow-up guidance.</p></div>
+    </div></div>
+  </section>
+
+  <!-- About (article style, thorough) -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-article">
+        <div><img src="OPS files/Profile Photo.JPG" alt="Dr Muthoni Ndonga" class="about-photo"><div class="about-badge">FC Path (SA) Oral Pathology</div></div>
+        <div><div class="section-label">Our Lead Specialist</div><h2 class="about-name">Dr. Muthoni Ndonga</h2><p class="about-title-role">BDS (UoN) · MChD (UWC) · FC Path (SA) Oral Pathology</p>
+        <p class="about-bio">Dr. Muthoni Ndonga is a Dental Surgeon and Specialist Oral and Maxillofacial Pathologist based in Nairobi, Kenya, with more than 10 years of experience in oral healthcare and advanced diagnostic pathology. She completed specialist training in Oral Pathology at Kenyatta National Hospital and the University of Nairobi Dental Hospital, followed by specialist licensure from the Kenya Medical Practitioners and Dentists Council (KMPDC). Through The Oral Pathology Service, she focuses on improving access to specialist oral histopathology and cytopathology services across Kenya and the broader East African region.</p>
+        <p class="about-bio">Dr. Ndonga holds a Master of Dental Surgery in Oral Pathology from the University of the Western Cape, Cape Town, and a Fellowship in Oral Pathology from the College of Pathologists of South Africa. She currently serves as a Consultant Oral Pathologist and Lecturer at the University of Nairobi, training the next generation of dental specialists.</p>
+        <div class="credential-list"><div class="credential"><div class="credential-icon">🎓</div><div class="credential-text"><strong>BDS – Bachelor of Dental Surgery</strong>University of Nairobi</div></div><div class="credential"><div class="credential-icon">🏅</div><div class="credential-text"><strong>MChD – Master of Dental Surgery (Oral Pathology)</strong>University of the Western Cape</div></div><div class="credential"><div class="credential-icon">⭐</div><div class="credential-text"><strong>FC Path (SA) – Fellowship Oral Pathology</strong>College of Pathologists of South Africa</div></div></div>
+        <div class="roles-list"><span class="role-tag">Consultant Oral Pathologist</span><span class="role-tag">Lecturer – University of Nairobi</span><span class="role-tag">Practising Dental Surgeon</span><span class="role-tag">KMPDC Licensed</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (preserved) -->
+  <section id="faq" class="faq-section">
+    <div class="container"><div class="section-label">Common Questions</div><h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid"><div class="faq-list"><div class="faq-item open"><button class="faq-q">What types of specimens do you accept? <span>+</span></button><div class="faq-a">Wide range including soft tissue, bone, cytology, odontogenic and salivary gland samples.</div></div><div class="faq-item"><button class="faq-q">Do you offer second opinions? <span>+</span></button><div class="faq-a">Yes, expert second opinions on prior pathology reports.</div></div><div class="faq-item"><button class="faq-q">Turnaround time? <span>+</span></button><div class="faq-a">Standard 3–5 business days, expedited available.</div></div><div class="faq-item"><button class="faq-q">Can I discuss case with pathologist? <span>+</span></button><div class="faq-a">Absolutely, direct consultations encouraged.</div></div></div>
+      <div class="faq-cta-box"><h3>Ready to Submit a Case?</h3><p>Contact us or track an existing case.</p><button class="faq-link-item" style="background:rgba(255,255,255,0.15); width:100%; text-align:left;" id="faqSubmitBtn">📄 Submit a Specimen →</button><button class="faq-link-item" style="background:rgba(255,255,255,0.15); width:100%; text-align:left;" id="faqTrackBtn">🔍 Track an Existing Case →</button><a href="https://theoralpathologyservice.com/wp-content/uploads/2026/01/Lab-request-form-final-x2.pdf" target="_blank" class="faq-link-item" style="display:flex;">📎 Download PDF Request Form →</a></div></div></div>
+  </section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><img src="OPS files/Logo files/png without bg/ops logo.2ai-02.png" style="height:45px;"><p>Specialist oral & maxillofacial pathology for Kenya & East Africa.</p></div><div><h4>Quick Links</h4><div class="footer-links"><a href="#home">Home</a><a href="#mission">Mission</a><a href="#services">Services</a><a href="#about">Specialist</a></div></div><div><h4>Contact</h4><p>info@theoralpathologyservice.com<br>+254 700 632 629<br>Nairobi, Kenya</p></div><div><h4>Downloads</h4><a href="https://theoralpathologyservice.com/wp-content/uploads/2026/01/Lab-request-form-final-x2.pdf" target="_blank">📄 Lab Request Form PDF</a><br><a href="#">📄 Rate Card</a></div></div><div class="footer-bottom"><p>© 2026 The Oral Pathology Service. All rights reserved.</p></div></div></footer>
+
+<!-- Modal Overlay -->
+<div id="formModal" class="modal-overlay"><div class="modal-container"><span class="modal-close">&times;</span><div id="modalContent"></div></div></div>
+
+<script>
+  // Seamless slideshow without dots
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  function nextSlide() { slides[slideIndex].classList.remove('active'); slideIndex = (slideIndex+1)%slides.length; slides[slideIndex].classList.add('active'); }
+  setInterval(nextSlide, 5000);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => { btn.addEventListener('click', () => { const item = btn.closest('.faq-item'); item.classList.toggle('open'); }); });
+
+  // Modal logic
+  const modal = document.getElementById('formModal');
+  const modalContent = document.getElementById('modalContent');
+  function showForm(type) {
+    modalContent.innerHTML = '';
+    if (type === 'submission') {
+      modalContent.innerHTML = `<h3>Submit a Specimen</h3><form id="dynamicSubForm"><input type="hidden" name="access_key" value="547e9476-f74d-4db8-9b4b-faf1642f3e85"><div class="form-group"><label>Full Name *</label><input type="text" name="name" required></div><div class="form-group"><label>Email *</label><input type="email" name="email" required></div><div class="form-group"><label>Facility</label><input type="text" name="facility"></div><div class="form-group"><label>Specimen Type</label><select name="specimen_type"><option>Soft Tissue</option><option>Bone</option><option>Cytology</option></select></div><div class="form-group"><label>Clinical History</label><textarea name="history"></textarea></div><button class="btn btn-primary" type="submit">Send Request</button><div class="form-success-msg"></div><div class="form-error-msg"></div></form>`;
+      const form = document.getElementById('dynamicSubForm');
+      form.onsubmit = async (e) => { e.preventDefault(); const btn = form.querySelector('button'); btn.disabled=true; const data = new FormData(form); const res = await fetch('https://api.web3forms.com/submit', {method:'POST', body:data}); const json = await res.json(); if(json.success){ form.querySelector('.form-success-msg').style.display='block'; form.querySelector('.form-success-msg').innerHTML='✓ Request received. We’ll contact you.'; form.reset(); } else { form.querySelector('.form-error-msg').style.display='block'; } btn.disabled=false; };
+    } else if (type === 'tracking') {
+      modalContent.innerHTML = `<h3>Track a Case</h3><form id="dynamicTrackForm"><input type="hidden" name="access_key" value="547e9476-f74d-4db8-9b4b-faf1642f3e85"><div class="form-group"><label>Your Name *</label><input type="text" name="name" required></div><div class="form-group"><label>Email *</label><input type="email" name="email" required></div><div class="form-group"><label>Case Reference *</label><input type="text" name="reference" required></div><div class="form-group"><label>Message</label><textarea name="message"></textarea></div><button class="btn btn-primary" type="submit">Track Case</button><div class="form-success-msg"></div><div class="form-error-msg"></div></form>`;
+      const form = document.getElementById('dynamicTrackForm');
+      form.onsubmit = async (e) => { e.preventDefault(); const btn = form.querySelector('button'); btn.disabled=true; const data = new FormData(form); const res = await fetch('https://api.web3forms.com/submit', {method:'POST', body:data}); const json = await res.json(); if(json.success){ form.querySelector('.form-success-msg').style.display='block'; form.reset(); } else { form.querySelector('.form-error-msg').style.display='block'; } btn.disabled=false; };
+    }
+    modal.style.display = 'flex';
+  }
+  document.querySelectorAll('#submitSpecimenBtn, #heroSubmitBtn, #mobileSubmitBtn, #faqSubmitBtn').forEach(btn => btn.addEventListener('click', () => showForm('submission')));
+  document.querySelectorAll('#trackCaseBtn, #heroTrackBtn, #faqTrackBtn').forEach(btn => btn.addEventListener('click', () => showForm('tracking')));
+  document.querySelectorAll('.open-modal-btn').forEach(btn => { btn.addEventListener('click', (e) => { const formType = btn.getAttribute('data-form'); showForm(formType); }); });
+  document.querySelector('.modal-close').addEventListener('click', () => modal.style.display = 'none');
+  window.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+  // Hamburger
+  const hamburger = document.getElementById('hamburger'); const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+</script>
+</body>
+</html>

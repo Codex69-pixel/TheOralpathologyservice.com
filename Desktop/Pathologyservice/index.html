@@ -1154,23 +1154,18 @@
 
         <div class="clients-strip fade-up fade-up-delay-1" role="list">
           <div class="client-item" role="listitem">
-            <div class="client-divider-num">01</div>
             <div class="client-item-label">Dental Practitioners &amp; Dental Specialists</div>
           </div>
           <div class="client-item" role="listitem">
-            <div class="client-divider-num">02</div>
             <div class="client-item-label">Oral &amp; Maxillofacial Surgeons</div>
           </div>
           <div class="client-item" role="listitem">
-            <div class="client-divider-num">03</div>
             <div class="client-item-label">ENT Specialists</div>
           </div>
           <div class="client-item" role="listitem">
-            <div class="client-divider-num">04</div>
             <div class="client-item-label">Public &amp; Private Healthcare Facilities</div>
           </div>
           <div class="client-item" role="listitem">
-            <div class="client-divider-num">05</div>
             <div class="client-item-label">Academic &amp; Research Institutions</div>
           </div>
         </div>
@@ -1522,11 +1517,11 @@
           &nbsp;·&nbsp;<a href="#">Privacy Policy</a>
           &nbsp;·&nbsp;<a href="#">Terms of Use</a>
         </p>
+        <div class="footer-disclaimer" role="note">
+      * Diagnostic reports issued by The Oral Pathology Service are intended for interpretation by qualified healthcare professionals and must be considered in conjunction with full clinical and radiological information. Reports do not constitute standalone clinical advice.
+    </div>
         <p class="footer-bottom-text">Nairobi, Kenya &nbsp;·&nbsp; Serving East Africa</p>
       </div>
-    </div>
-    <div class="footer-disclaimer" role="note">
-      * Diagnostic reports issued by The Oral Pathology Service are intended for interpretation by qualified healthcare professionals and must be considered in conjunction with full clinical and radiological information. Reports do not constitute standalone clinical advice.
     </div>
   </footer>
 
@@ -1562,8 +1557,8 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="sub_name">Full Name <span class="req">*</span></label>
-                <input class="form-input" type="text" id="sub_name" name="clinician_name" placeholder="Dr. Jane Kamau" required autocomplete="name" />
+                <label class="form-label" for="sub_name">Patient Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="sub_name" name="clinician_name" placeholder="Patient Name" required autocomplete="name" />
               </div>
               <div class="form-group">
                 <label class="form-label" for="sub_email">Email Address <span class="req">*</span></label>
@@ -1576,7 +1571,7 @@
                 <input class="form-input" type="tel" id="sub_phone" name="phone" placeholder="+254 7XX XXX XXX" autocomplete="tel" />
               </div>
               <div class="form-group">
-                <label class="form-label" for="sub_facility">Clinical Facility / Institution <span class="req">*</span></label>
+                <label class="form-label" for="sub_facility">Requesting Clinician / Organisation <span class="req">*</span></label>
                 <input class="form-input" type="text" id="sub_facility" name="facility" placeholder="e.g. Aga Khan Hospital Nairobi" required />
               </div>
             </div>
@@ -1585,13 +1580,15 @@
                 <label class="form-label" for="sub_specimen_type">Specimen Type <span class="req">*</span></label>
                 <select class="form-select" id="sub_specimen_type" name="specimen_type" required>
                   <option value="">Select specimen type</option>
-                  <option value="soft-tissue">Soft Tissue Biopsy</option>
-                  <option value="bone">Bone Specimen</option>
-                  <option value="cytology">Cytology</option>
-                  <option value="odontogenic">Odontogenic (Tooth-bearing)</option>
-                  <option value="salivary-gland">Salivary Gland</option>
-                  <option value="second-opinion">Second Opinion (prior histology)</option>
+                  <option value="soft-tissue">Incisional Biopsy</option>
+                  <option value="bone">Excisional Biopsy</option>
+                  <option value="cytology">Wide local excision</option>
+                  <option value="odontogenic">Cyst enucleation</option>
                   <option value="other">Other</option>
+                  <div class="form-group">
+                <label class="form-label" for="sub_facility">Specify <span class="req">*</span></label>
+                <input class="form-input" type="text" id="sub_facility" name="facility" placeholder="if other specify" required />
+              </div>
                 </select>
               </div>
               <div class="form-group">
@@ -1653,8 +1650,8 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="trk_name">Your Name <span class="req">*</span></label>
-                <input class="form-input" type="text" id="trk_name" name="clinician_name" placeholder="Dr. Jane Kamau" required />
+                <label class="form-label" for="trk_name">Patient Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="trk_name" name="clinician_name" placeholder="Patient Name" required />
               </div>
               <div class="form-group">
                 <label class="form-label" for="trk_email">Email Address <span class="req">*</span></label>
@@ -1665,6 +1662,10 @@
               <label class="form-label" for="trk_ref">Case / Specimen Reference <span class="req">*</span></label>
               <input class="form-input" type="text" id="trk_ref" name="case_reference" placeholder="e.g. OPS-2026-XXXX or your internal reference" required />
             </div>
+            <div class="form-group">
+                <label class="form-label" for="sub_facility">Requesting Clinician / Organisation <span class="req">*</span></label>
+                <input class="form-input" type="text" id="sub_facility" name="facility" placeholder="e.g. Aga Khan Hospital Nairobi" required />
+              </div>
             <div class="form-group">
               <label class="form-label" for="trk_date">Approximate Date of Submission</label>
               <input class="form-input" type="date" id="trk_date" name="submission_date" />
@@ -1704,7 +1705,7 @@
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="enq_name">Full Name <span class="req">*</span></label>
-                <input class="form-input" type="text" id="enq_name" name="name" placeholder="Patient Name" required />
+                <input class="form-input" type="text" id="enq_name" name="name" placeholder="Full Name" required />
               </div>
               <div class="form-group">
                 <label class="form-label" for="enq_email">Email Address <span class="req">*</span></label>
